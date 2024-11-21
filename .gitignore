@@ -1,0 +1,5 @@
+node_modules/
+*/node_modules
+**/node_modules
+fnac-backend/node_modules
+fnac-frontend/node_modules

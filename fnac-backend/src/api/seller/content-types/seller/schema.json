@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "sellers",
+  "info": {
+    "singularName": "seller",
+    "pluralName": "sellers",
+    "displayName": "Sellers",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    },
+    "product": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::product.product"
+    },
+    "transactions": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::transaction.transaction",
+      "mappedBy": "requestedby"
+    }
+  }
+}
