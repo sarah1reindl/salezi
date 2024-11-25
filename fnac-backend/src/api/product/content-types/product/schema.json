@@ -33,6 +33,11 @@
     "transactions": {
       "type": "relation",
       "relation": "oneToMany",
+      "target": "api::transaction.transaction"
+    },
+    "transaction": {
+      "type": "relation",
+      "relation": "oneToOne",
       "target": "api::transaction.transaction",
       "mappedBy": "product"
     }

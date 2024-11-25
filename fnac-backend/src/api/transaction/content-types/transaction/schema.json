@@ -29,15 +29,15 @@
     },
     "product": {
       "type": "relation",
-      "relation": "manyToOne",
+      "relation": "oneToOne",
       "target": "api::product.product",
-      "inversedBy": "transactions"
+      "inversedBy": "transaction"
     },
-    "requestedby": {
+    "seller": {
       "type": "relation",
-      "relation": "manyToOne",
+      "relation": "oneToOne",
       "target": "api::seller.seller",
-      "inversedBy": "transactions"
+      "inversedBy": "transaction"
     }
   }
 }

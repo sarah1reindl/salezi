@@ -1,6 +1,8 @@
+
 export default [
+  
   'strapi::logger',
-  'strapi::errors',
+  'strapi::errors', 
   'strapi::security',
   'strapi::cors',
   'strapi::poweredBy',
@@ -9,4 +11,10 @@ export default [
   'strapi::session',
   'strapi::favicon',
   'strapi::public',
+
+  {
+    name: 'global::validateStock', 
+    resolve: './src/middlewares/validateStock', 
+    config: {}, 
+  },
 ];

@@ -18,16 +18,21 @@
     "email": {
       "type": "email"
     },
-    "product": {
+    "transactions": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::transaction.transaction"
+    },
+    "products": {
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::product.product"
     },
-    "transactions": {
+    "transaction": {
       "type": "relation",
-      "relation": "oneToMany",
+      "relation": "oneToOne",
       "target": "api::transaction.transaction",
-      "mappedBy": "requestedby"
+      "mappedBy": "seller"
     }
   }
 }
