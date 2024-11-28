@@ -1,0 +1,201 @@
+
+body {
+    background-color: black;
+    color: rgb(199, 150, 59);
+    margin: 0;
+  }
+  .home {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .carousel {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    margin-bottom: 40px;
+  }
+  
+  .carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    height: 100%;
+  }
+  
+  .carousel-slide {
+    min-width: 100%;
+    height: 100%;
+  }
+  
+  .carousel-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+    font-size: 18px;
+  }
+  
+  .carousel-button.prev {
+    left: 10px;
+  }
+  
+  .carousel-button.next {
+    right: 10px;
+  }
+  
+  .welcome-section {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .welcome-section h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+  }
+  
+  .featured-section {
+    margin-bottom: 40px;
+  }
+  
+  .featured-section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  
+  .category-filter {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .category-filter button {
+    padding: 8px 16px;
+    border: 1px solid #ddd;
+    background: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .category-filter button.active {
+    background: #000;
+    color: white;
+  }
+  
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  .product-card {
+    padding: 15px;
+    text-align: center;
+    transition: all 0.3s ease;
+  }
+  
+  .product-card:hover {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  
+  .product-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+  
+  .product-card h3 {
+    margin: 10px 0;
+  }
+  
+  .product-card .price {
+    font-weight: bold;
+    color: white;
+  }
+  
+  .product-card .category {
+    font-size: 0.9em;
+    color: #666;
+  }
+  
+  .add-to-cart-btn {
+    background-color: #000;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%;
+    margin-top: 10px;
+  }
+  
+  .add-to-cart-btn:hover {
+    background-color: #333;
+  }
+  
+  .pagination {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  .page-number {
+    padding: 8px 12px;
+    border: none;
+    background: #f0f0f0;
+    cursor: pointer;
+  }
+  
+  .page-number.active {
+    background: #000;
+    color: white;
+  }
+  
+  .next-page {
+    background: #000;
+    color: white;
+  }
+  
+  .next-page:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+  }
+  
+  @media (max-width: 768px) {
+    .carousel {
+      height: 300px;
+    }
+  
+    .welcome-section h1 {
+      font-size: 2em;
+    }
+  
+    .featured-section h2 {
+      font-size: 1.5em;
+    }
+  
+    .category-filter {
+      flex-wrap: wrap;
+    }
+  
+    .category-filter button {
+      font-size: 0.9em;
+      padding: 6px 12px;
+    }
+  }
+  

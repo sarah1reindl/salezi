@@ -1,0 +1,270 @@
+
+#app {
+    font-family: Arial, sans-serif;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: black;
+    position: relative;
+    z-index: 1000;
+  }
+  
+  .logo-menu-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo img {
+    height: 100px;
+  }
+  
+  .menu-container {
+    display: none;
+    margin-left: 1rem;
+  }
+  
+  .menu {
+    height: 24px;
+    width: 24px;
+    cursor: pointer;
+  }
+  
+  .dropdown-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+    z-index: 1001;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .dropdown-menu.open {
+    transform: translateX(0);
+  }
+  
+  .menu-header {
+    display: flex;
+    justify-content: flex-end;
+    padding: 1rem;
+  }
+  
+  .close-icon {
+    font-size: 1.5rem;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .menu-items {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .menu-items li {
+    padding: 1rem;
+  }
+  
+  .menu-items a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+  }
+  .search-bar {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+  }
+  
+  .loop {
+    height: 40px;
+    margin-right: 0.5rem;
+  }
+  
+  .search-input {
+    border: none;
+    outline: none;
+    background-color: black;
+  }
+  
+  .nav-items {
+    display: flex;
+    list-style-type: none;
+  }
+  
+  .nav-items li {
+    margin-left: 1rem;
+  }
+  
+  .nav-items a {
+    text-decoration: none;
+    color: #000;
+  }
+  
+  .icons {
+    display: flex;
+    align-items: center;
+  }
+  
+  .cart-icon {
+    position: relative;
+    margin-right: 1rem;
+  }
+  
+  .cart-img {
+    height: 24px;
+  }
+  
+  .cart-count {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 12px;
+  }
+  
+  .login-link a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  .pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+  }
+  
+  .page-number {
+    margin: 0 0.5rem;
+    padding: 0.5rem 1rem;
+    border: 1px solid #ccc;
+    cursor: pointer;
+  }
+  
+  .page-number.active {
+    background-color: #000;
+    color: #fff;
+  }
+  
+  .cart-modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    max-width: 400px;
+    background-color: #fff;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+    z-index: 1002;
+  }
+  
+  .cart-content {
+    padding: 1rem;
+  }
+  
+  .cart-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  .close-btn {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  
+  .cart-items {
+    max-height: calc(100vh - 200px);
+    overflow-y: auto;
+  }
+  
+  .cart-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .cart-item-image {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    margin-right: 1rem;
+  }
+  
+  .cart-item-details {
+    flex-grow: 1;
+  }
+  
+  .cart-item-quantity {
+    display: flex;
+    align-items: center;
+  }
+  
+  .cart-item-quantity button {
+    background: none;
+    border: 1px solid #ccc;
+    padding: 0.25rem 0.5rem;
+    cursor: pointer;
+  }
+  
+  .remove-btn {
+    background-color: #ff4444;
+    color: white;
+    border: none;
+    padding: 0.25rem 0.5rem;
+    cursor: pointer;
+  }
+  
+  .cart-footer {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid #eee;
+  }
+  
+  .cart-total {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+  }
+  
+  .checkout-btn {
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 0.75rem;
+    cursor: pointer;
+  }
+  
+  @media (max-width: 768px) {
+    .nav-items, 
+    .search-bar {
+      display: none;
+    }
+  
+    .menu-container {
+      display: block;
+    }
+  
+    .navbar {
+      padding: 0.5rem 1rem;
+    }
+  
+    .logo-menu-container {
+      width: 100%;
+      justify-content: space-between;
+    }
+  }

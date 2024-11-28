@@ -1,0 +1,71 @@
+.auth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #fff5e6;
+}
+.auth-card {
+  background-color: white;
+  width: 400px;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.auth-card h2 {
+  text-align: center;
+  color: black;
+  margin-bottom: 20px;
+}
+
+.tab-buttons {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.tab-buttons button {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  background-color: #fff5e6;
+  color: #ff6b00;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.tab-buttons button:hover {
+  background-color: #ffebcc;
+}
+
+.tab-content form {
+  display: flex;
+  flex-direction: column;
+}
+
+.tab-content input {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ff6b00;
+  border-radius: 6px;
+  outline: none;
+}
+
+.tab-content input:focus {
+  border-color: #ff8c00;
+  box-shadow: 0 0 5px rgba(255, 107, 0, 0.3);
+}
+
+.tab-content button {
+  background-color: #ff6b00;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.tab-content button:hover {
+  background-color: #ff8c00;
+}
